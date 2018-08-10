@@ -12,15 +12,17 @@ function draw(songs) {
   for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
     template += `
-    <div>
-     <img src="${song.albumArt}" alt = "song.previewUrl">
-     <p> ${song.title}</p> 
-     <p> ${song.artist}</p>
- <audio controls>
-    <source src="${song.preview}" type="audio/mpeg"> 
-  </audio>
-     <p> ${song.price}</p>
+    <li class="media">
+    <img class="mr-3" src="${song.albumArt}" alt="placehold.it">
+    <div class="media-body">
+        <h5 class="mt-0 mb-1">${song.title}</h5>
+        <p> ${song.artist}</p>
+        <audio controls>
+            <source src="${song.preview}" type="audio/mpeg">
+        </audio>
+        <p> ${song.price}</p>
     </div>
+</li>
     `
     //I want to save a thumbnail, an artist, a preview, a collection (CD), and a price to update to the index and inject new data.
   }
