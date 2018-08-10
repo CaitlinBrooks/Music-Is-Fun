@@ -20,7 +20,7 @@ function draw(songs) {
         <audio controls>
             <source src="${song.preview}" type="audio/mpeg">
         </audio>
-        <p> ${song.price}</p>
+        <p>$ ${song.price}</p>
     </div>
 </li>
     `
