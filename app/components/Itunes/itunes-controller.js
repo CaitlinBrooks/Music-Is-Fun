@@ -12,10 +12,13 @@ function draw(songs) {
   for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
     template += `
-    <div class="form-inline" onclick="app.controllers.itunesCtrl.getMusic(event)(${i})">
+    <div>
      <img src="${song.albumArt}" alt = "song.previewUrl">
      <p> ${song.title}</p> 
      <p> ${song.artist}</p>
+ <audio controls>
+    <source src="${song.preview}" type="audio/mpeg"> 
+  </audio>
      <p> ${song.price}</p>
     </div>
     `
