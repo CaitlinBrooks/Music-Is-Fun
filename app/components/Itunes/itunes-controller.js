@@ -24,7 +24,9 @@ function draw(songs) {
     </div>
 </li>
     `
-    //I want to save a thumbnail, an artist, a preview, a collection (CD), and a price to update to the index and inject new data.
+    // function isMusic(song) {
+    //   return song == .mp4;
+    // }
   }
   document.getElementById('song-list').innerHTML = template
   console.log(songs)
