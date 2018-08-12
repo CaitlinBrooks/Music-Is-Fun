@@ -1,5 +1,10 @@
-form-group {
-  background-color: #ffffff;
-  color: rgb(32, 32, 32);
+.tagline {
+  font-family: 'Lobster', serif;
+  font-size: 60px;
+  color: white
 }
 
+body {
+   background-image: url("https://www.wallpaperflare.com/static/338/872/889/vinyl-audio-minimalism-wallpaper.jpg");
+   color:white;
+}
