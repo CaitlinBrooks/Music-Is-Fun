@@ -1,70 +1,50 @@
-## Welcome to the new and Improved Itunes!
+## Jukebox
 
-Okay well maybe its not quite there yet, that's where you come in.
+<strong>About</strong><br/>
+Jukebox MVP description here.<br/>
 
-### The Setup
+<strong>Getting Started</strong><br/>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.<br/>
 
-You will notice a file named `itunes-service.js` This file has been setup to get information from the itunes server and return a list of songs from whatever is typed into the input field. You can rest assured that this part of the application is fully functional. 
+<strong>Prerequisites</strong><br/>
+What things you need to install the software and how to install them<br/>
+Give examples<br/>
 
-You are now being tasked with handling the data that comes back from the service after clicking the `Get Music` Button. 
+<strong>Installing</strong><br/>
+A step by step series of examples that tell you how to get a development env running<br/>
+Say what the step will be<br/>
+Give the example<br/>
+And repeat<br/>
+until finished<br/>
+End with an example of getting some data out of the system or using it for a little demo<br/>
 
-The first thing to focus on will be adding the correct information to the screen. You will be doing this through a `drawSongs` function that will need to be setup in itunes-controller.js
+<strong>Running Tests</strong><br/>
+Explain how to run the automated tests for this system<br/>
+Break down into end to end tests<br/>
+Explain what these tests test and why<br/>
+Give an example<br/>
+And coding style tests<br/>
+Explain what these tests test and why<br/>
+Give an example<br/>
 
-> Your `drawSongs` function will need to accept a parameter of songs maybe call it called `(songList)`
+<strong>Deployment</strong><br/>
+Add additional notes about how to deploy this on a live system<br/>
 
-> The `songList` is an `array` of `objects` where each `object` is a song as illustrated below
+<strong>Built With</strong><br/>
+Javascript<br/>
+Contributing<br/>
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.<br/>
 
-```javascript
-songList = [{
-  title: 'string - song title',
-  albumArt: 'string - url for song album cover art',
-  artist: 'string - artistName',
-  collection: 'string - album title',
-  price: 'number - price of song',
-  preview: 'string - url will play the song'
-}]
-```
-When the user clicks the `Get Music Button` it runs a function in the `itunes-service.js` once that code is finished it will call a `drawSongs function` and pass in the list of songs requested. Thus you will not need to modify any of the code in the `itunes-service.js` or the `getMusic function` you will however need to create `drawSongs function` and pass it as a callback into the `.then()` statement available in the controller.
+<strong>Versioning</strong><br/>
+For the versions available, see the tags on this repository.<br/>
 
-### Step 1 -  Where is the output?
+<strong>Authors</strong><br/>
+Caitlin Brooks<br/>
 
-It is your responsibility to update the `drawSongs function` so the user can actually see the data that is returned from the itunes service.
+<strong>Licenses</strong><br/>
+This project is licensed under the MIT License - see the LICENSE.md file for details<br/>
 
-There are several ways to manipulate the DOM and add these elements. Primarily all of these songs will need to be added to the page I would recommend an easy to target container such as 
-
-```html
-<ul id="song-list">
-  <!--SONGS ADDED DYNAMICALLY HERE-->
-</ul>
-```
-
-### Step 2 - Prettify with Bootstrap
-
-Styling is a hard area to grade so at a bare minimum you will need to show your understanding of bootstrap classes. The following image is accomplished purely with built in bootstrap classes. Feel free to customize and go crazy with some awesome styles but make it look good and ensure that you are using the grid system so the results are responsive. Also be sure to use at least 2 bootstrap components
-
-<div>
-  <img class="img-responsive" src="https://bcw.blob.core.windows.net/public/img/mytunes.jpg" />
-</div>
-
-
-## Requirements
- - Visualization: 
-    - All songs are rendered when search button is clicked
-    - Bootstrap is utilized to provide styling to the page
-    - Each property of the song object is displayed (title, artist, price, album art, preview (hint: "html audio tag"))
-  - Functionality: 
-    - New search will clear out old results
-
-    
-
-
-
-
-### BONUS CHALLENGES 
-- Clicking on the title should play the 30 second preview 
-- The preview must play without opening a new browser window 
-- Clicking play on a title while another song is already playing will stop the previous song and start the new one
-- When you search you will also get movies, try to filter those out
-
-### Finished?
-When You are finished please submit the url for your github repo to be graded. You are free to work on this however you like but ultimately it needs to be added to your github.
+<strong>Acknowledgments</strong><br/>
+Hat tips<br/>
+Inspiration<br/>
+etc.<br/>
